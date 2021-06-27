@@ -20,6 +20,7 @@ const SideBar = () => {
             <SideBarRow 
                 src={ProfileSrc} 
                 title="Shodipo Folajimi"
+                fontSize="10px"
             />
             <SideBarRow 
                 Icon={LocalHotelIcon} 

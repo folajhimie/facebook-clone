@@ -46,7 +46,7 @@ class Header extends React.Component {
                             className={this.state.isSwitchOn ? 'option': 'bank'} 
                             onClick={()=> this.setState({isSwitchOn: !this.state.isSwitchOn})}
                             to='/'>
-                            <HomeRoundedIcon fontSize="large"/> 
+                            <HomeRoundedIcon fontSize="medium"/> 
                         </Link>
                     </Tooltip>
                     <Tooltip title="Subscription">
@@ -54,7 +54,7 @@ class Header extends React.Component {
                             className={this.state.isButtonOn ? 'option': 'bank'} 
                             onClick={()=> this.setState({isButtonOn: !this.state.isButtonOn})}
                             to='/'>
-                            <SubscriptionsOutlinedIcon fontSize="large" />
+                            <SubscriptionsOutlinedIcon fontSize="medium" />
                         </Link>
                     </Tooltip>
                     <Tooltip title="Store">
@@ -62,7 +62,7 @@ class Header extends React.Component {
                             className={this.state.isLightOn ? 'option': 'bank'} 
                             onClick={()=> this.setState({isLightOn: !this.state.isLightOn})}
                             to='/'>
-                            <StorefrontRoundedIcon fontSize="large"/>
+                            <StorefrontRoundedIcon fontSize="medium"/>
                         </Link>
                     </Tooltip>
                     <Tooltip title="Supervisor">
@@ -70,7 +70,7 @@ class Header extends React.Component {
                             className={this.state.isPowerOn ? 'option': 'bank'} 
                             onClick={()=> this.setState({isPowerOn: !this.state.isPowerOn})}
                             to='/'>
-                            <SupervisedUserCircleOutlinedIcon fontSize="large" /> 
+                            <SupervisedUserCircleOutlinedIcon fontSize="medium" /> 
                         </Link>
                     </Tooltip>
                     <div className="line"></div>
@@ -80,35 +80,36 @@ class Header extends React.Component {
                         <div className="header__info">
                             <Avatar 
                                 alt="Gold" 
-                                src={Profile}/>
+                                src={Profile}
+                                className="pour"/>
                             <h4 className="letter"> Folajimi </h4>
                         </div>
                     </Link> 
                     <Tooltip title="Create">
                         <Link className="header__option" to='/'>
                             <IconButton>
-                                <AddIcon/>
+                                <AddIcon className="icon"/>
                             </IconButton>
                         </Link>
                     </Tooltip>
                     <Tooltip title="Messanger">
                      <Link className="header__option" to='/'>
                             <IconButton>
-                                <ChatBubbleIcon color='black'/>
+                                <ChatBubbleIcon className="icon"/>
                             </IconButton>
                         </Link>
                     </Tooltip>
                     <Tooltip title="Notification">
                         <Link className="header__option" to='/'>
                             <IconButton>
-                                <NotificationsSharpIcon/>
+                                <NotificationsSharpIcon className="icon"/>
                             </IconButton>
                         </Link>
                     </Tooltip>
                     <Tooltip title="Account">
                         <Link className="header__option" to='/'>
                             <IconButton>
-                                <ArrowDropDownRoundedIcon/>
+                                <ArrowDropDownRoundedIcon className="icon"/>
                             </IconButton>
                         </Link>
                     </Tooltip>

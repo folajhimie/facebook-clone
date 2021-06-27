@@ -20,6 +20,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    bottom: 5px;
 }
 
 .search{
@@ -44,6 +46,7 @@
     /* cursor: pointer; */
     position: relative;
     right: 230px;
+    top: 3px;
 }
 /* .search{
     outline-width: 0;
