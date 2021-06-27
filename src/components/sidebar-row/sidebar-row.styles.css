@@ -1,0 +1,71 @@
+.sidebar__row{
+    display: flex;
+    padding: 12px;
+    cursor: pointer;
+    align-items: center;
+}
+.sidebar__row:hover{
+    background-color: rgb(233, 233, 233);
+    padding: 7px;
+    /* margin: 5px 5px; */
+    border-radius: 7px;
+    border: 1px solid transparent;
+    position: relative;
+    width: 90%;
+}
+.sidebar__row > h4{
+    font-weight: bold;
+    /* margin-left: 30px; */
+}
+.sidebar__row:nth-child(1){
+    position: relative;
+    right: 5px;
+}
+.sidebar__row:nth-child(1):hover{
+    position: relative;
+    right: 3px;
+}
+
+.sidebar__row:nth-child(2) > .MuiSvgIcon-root{
+    color: rgba(255, 0, 149, 0.993);
+    /* color: rgb(153, 15, 15); */
+}
+.sidebar__row:nth-child(3) > .MuiSvgIcon-root{
+    color: rgb(21, 108, 190);
+}
+.sidebar__row:nth-child(4) > .MuiSvgIcon-root{
+    color: rgb(115, 10, 124);
+}
+.sidebar__row:nth-child(5) > .MuiSvgIcon-root{
+    color: rgb(46, 197, 16);
+}
+.sidebar__row:nth-child(6) > .MuiSvgIcon-root{
+    color: gray;
+}
+.sidebar__row:nth-child(7) > .MuiSvgIcon-root{
+    color: orange;
+}
+.sidebar__row:nth-child(8) > .MuiSvgIcon-root{
+    color: rgb(255, 60, 0);
+}
+.sidebar__row:nth-child(9) > .MuiSvgIcon-root{
+    color: black;
+    background-color: rgb(233, 233, 233);
+    padding: auto 25px;
+    /* margin: 5px 5px; */
+    border-radius: 50%;
+    border: 1px solid transparent;
+    position: relative;
+    /* width: 75%; */
+}
+.sidebar__row:nth-child(9):hover > .MuiSvgIcon-root{
+    /* color: rgba(255, 0, 149, 0.993); */
+    background-color: transparent;
+    /* padding: auto 25px; */
+    /* margin: 5px 5px; */
+    border-radius: 50%;
+    border: 1px solid transparent;
+    position: relative;
+    /* width: 75%; */
+    /* margin-left: 10px; */
+}
