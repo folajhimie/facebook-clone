@@ -5,10 +5,11 @@
     justify-content: space-between;
     background-color: white;
     border-bottom: 2px solid transparent;
-    box-shadow: 2px 2px 4px 1px #aaaaaa;
+    box-shadow: 2px 2px 4px 1px #d1cece;
     position: sticky;
     z-index: 100;
     top: 0;
+    
 }
 .header__input{
     padding: 10px 20px;
@@ -122,7 +123,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* margin-right: 140px;  */
+    margin-right: 140px; 
+    position: relative;
+    right: 50px;
 }
 .header__info{
     display: flex;
@@ -175,5 +178,32 @@ h4{
     color: rgb(26, 15, 15);
 }
 
-
+.topChat{
+    color: black;
+    position: relative;
+    font-size: 13px;
+    bottom: 18px;
+    right: -31px;
+    font-weight: bolder;
+    background-color: crimson;
+    width: 15px;
+    height: 15px;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: white;
+}
+.topChatIcon{
+    color: black;
+    position: relative;
+    font-size: 13px;
+    bottom: 18px;
+    right: -31px;
+    font-weight: bolder;
+    background-color: crimson;
+    width: 15px;
+    height: 15px;
+    padding: 1px 6px;
+    border-radius: 50px;
+    color: white;
+}
 

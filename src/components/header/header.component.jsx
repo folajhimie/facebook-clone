@@ -3,8 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import Avatar from '@material-ui/core/Avatar';
-import SubscriptionsOutlinedIcon from '@material-ui/icons/SubscriptionsOutlined';
-import StorefrontRoundedIcon from '@material-ui/icons/StorefrontRounded';
+import OndemandVideoOutlinedIcon from '@material-ui/icons/OndemandVideoOutlined';
+import GamesOutlinedIcon from '@material-ui/icons/GamesOutlined';
 import SupervisedUserCircleOutlinedIcon from '@material-ui/icons/SupervisedUserCircleOutlined';
 import AddIcon from '@material-ui/icons/Add';
 import ArrowDropDownRoundedIcon from '@material-ui/icons/ArrowDropDownRounded';
@@ -47,30 +47,33 @@ class Header extends React.Component {
                             onClick={()=> this.setState({isSwitchOn: !this.state.isSwitchOn})}
                             to='/'>
                             <HomeRoundedIcon fontSize="medium"/> 
+                            
                         </Link>
                     </Tooltip>
-                    <Tooltip title="Subscription">
+                    <Tooltip title="Watch">
                         <Link 
                             className={this.state.isButtonOn ? 'option': 'bank'} 
                             onClick={()=> this.setState({isButtonOn: !this.state.isButtonOn})}
                             to='/'>
-                            <SubscriptionsOutlinedIcon fontSize="medium" />
+                            <OndemandVideoOutlinedIcon fontSize="medium" />
+                            <span className="topChat">12</span>
                         </Link>
                     </Tooltip>
-                    <Tooltip title="Store">
-                        <Link 
-                            className={this.state.isLightOn ? 'option': 'bank'} 
-                            onClick={()=> this.setState({isLightOn: !this.state.isLightOn})}
-                            to='/'>
-                            <StorefrontRoundedIcon fontSize="medium"/>
-                        </Link>
-                    </Tooltip>
-                    <Tooltip title="Supervisor">
+                    <Tooltip title="Groups">
                         <Link 
                             className={this.state.isPowerOn ? 'option': 'bank'} 
                             onClick={()=> this.setState({isPowerOn: !this.state.isPowerOn})}
                             to='/'>
-                            <SupervisedUserCircleOutlinedIcon fontSize="medium" /> 
+                            <SupervisedUserCircleOutlinedIcon fontSize="medium" />
+                            <span className="topChatIcon">9+</span>
+                        </Link>
+                    </Tooltip>
+                    <Tooltip title="Game">
+                        <Link 
+                            className={this.state.isLightOn ? 'option': 'bank'} 
+                            onClick={()=> this.setState({isLightOn: !this.state.isLightOn})}
+                            to='/'>
+                            <GamesOutlinedIcon fontSize="medium"/>
                         </Link>
                     </Tooltip>
                     <div className="line"></div>

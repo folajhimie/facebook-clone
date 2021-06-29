@@ -1,0 +1,192 @@
+/* STYLING TOP HEADER  */
+
+
+.custom__post{
+    background-color: rgb(255,255,255);
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 2px 4px -1px rgb(184, 184, 184);
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    /* margin-left: 70px; */
+    margin-bottom: 30px; 
+}
+.custom__first{
+    display: flex;
+    width: auto;
+    /* background-color: blue; */
+    justify-content: space-between;
+    padding-bottom: 11px;
+    padding: 7px;
+}
+.custom__one{
+    display: flex;
+    /* background-color: chartreuse; */
+}
+/* .custom__name{
+    margin-left: 10px;
+    padding: 10px;
+} */
+.name{
+    /* padding-top: 4px; */
+    position: relative;
+    top: 4px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.name:hover{
+    text-decoration: underline;
+}
+.avatar{
+    margin-left: 6px;
+    margin-top: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* STYLING TOP HEADER ICON */
+.custom__two{
+    /* background-color: brown; */
+    /* border-radius: 50%;   */
+    position: relative;
+    /* top: 3px; */
+    left: -6px;
+    cursor: pointer;
+    color: gray;
+}
+.custom__second{
+    word-break: inherit;
+    width: 100%;
+    /* background-color: lightsalmon; */
+    padding-left: 8px;
+    /* padding-right: 8px; */
+    white-space: inherit;
+    padding: 7px 13px;
+}
+
+.custom__third > img {
+    width: 100%;
+    height: auto;
+}
+
+/* STYLING THE FOURTH */
+.custom__fourth{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 13px;
+    border-bottom: 1px solid gray;
+
+    
+    width: 95%;
+    /* border-bottom: 1px solid gray; */
+    position: relative;
+    left: 13px;
+    /* bottom: 10px; */
+}
+.shares{
+    padding-left: 15px;
+    /* background: greenyellow; */
+}
+.paragraph:hover{
+    color: black;
+    text-decoration: underline;
+}
+.paragraph{
+    color: gray;
+    cursor: pointer;
+}
+
+/* STYLING THE FIFTH */
+.carry{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 85%;
+}
+.one , .two , .three{
+    padding: 6px;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 140px;
+    /* padding: 7px; */
+}
+.one:hover, .two:hover, .three:hover{
+    /* width: 120px; */
+    background-color: rgb(240, 242, 245);
+    /* background-color: cadetblue; */
+    border-radius: 10px;
+}
+.fifth{
+    margin-left: 12px;
+    display: flex;
+    margin-top: 3px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid gray;
+    width: 95%;
+}
+
+.four{
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: row;
+    width: 70px;
+    /* background-color: chocolate; */
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bolt{
+    width: 170px;
+    position: relative;
+    top: 10px;
+}
+.four:hover{
+    background-color: rgb(240, 242, 245);
+}
+
+/* ------ STYLING THE SIXTH ---- */
+.bash{
+    outline-width: none;
+    padding: 9px;
+    width: 90%;
+    border-radius: 40px;
+    outline: none;
+    background-color: rgb(225, 229, 235);
+    border: none;
+    text-indent: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.bash:focus{
+    opacity: .8;
+}
+.sixth{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    margin-left: 12px;
+    width: 95%;
+    cursor: pointer;
+}
+.emoji{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    /* background-color: darkcyan; */
+    align-items: center;
+    /* padding: 8px; */
+    position: relative;
+    left: 390px;
+    top: -29px;
+    cursor: pointer;
+}

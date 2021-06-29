@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Avatar from '@material-ui/core/Avatar';
 // import SearchButton from '../search-button/search-button.component'
 import PostButton from '../post/post-button.component'
@@ -9,6 +9,9 @@ import ProfileSrc from '../../images/profileSource.png'
 import './message-sender.styles.css'
 
 function MessageSender(){
+    const [input, setInput] = useState("")
+    const [imageUrl, setImageUrl] = useState("")
+
     const handleSubmit= event =>{
         event.preventDefault();
     }
@@ -18,8 +21,14 @@ function MessageSender(){
             <div className="message__top">
                 <Avatar src={ProfileSrc} className="input__color"/>
                 <form >
-                    <PostButton placeholder={"What's on your mind"}/>
-                    <PostButton placeholder={'Image URL (Optional)'}/>
+                    <PostButton 
+                        value={input}
+                        onChange={event=> setInput(event.target.value)}
+                        placeholder={"What's on your mind"}/>
+                    <PostButton 
+                        value={imageUrl}
+                        onChange={event=> setImageUrl(event.target.value)}
+                        placeholder={'Image URL (Optional)'}/>
                     <button onsubmit={handleSubmit} type="submit">Hidden Submit</button>
                 </form>
             </div>

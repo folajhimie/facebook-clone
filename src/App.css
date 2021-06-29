@@ -12,10 +12,18 @@ a{
   /* color: black; */
 }
 .app{
-  
   height: fit-content;
 }
 .app__body{
+  margin-top: 3px;
   display: flex;
+  flex-direction: row;
   background-color: rgb(240,242,245);
+}
+.app__middle{
+  /* display: flex; */
+  background-color: rgb(240,242,245);
+  /* flex-direction: row; */
+  /* flex: 1; */
+  width: fit-content;
 }
